@@ -42,7 +42,7 @@ const pokémon = Object.freeze([
     console.log(poisonName);
     const flyName = pokémon.filter( p => p.types[1] == "flying").map( p => p.name);
     console.log(flyName); 
-    const count = pokémon.filter( p => p.types == "normal");
+    const count = pokémon.filter( p => p.types == "normal").length;
     console.log(count);
 
 
