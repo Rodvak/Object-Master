@@ -32,7 +32,7 @@ const pokémon = Object.freeze([
     console.log(idDivBy3);
     const fireT = pokémon.filter( p => p.types == "fire");
     console.log(fireT);
-    const moreThanOne = pokémon.filter( p => p.types[1]);
+    const moreThanOne = pokémon.filter( p => p.types.length>1);
     console.log(moreThanOne);
     const names = pokémon.map( p => p.name);
     console.log(names);
@@ -42,7 +42,7 @@ const pokémon = Object.freeze([
     console.log(poisonName);
     const flyName = pokémon.filter( p => p.types[1] == "flying").map( p => p.name);
     console.log(flyName); 
-    const count = pokémon.filter( p => p.types == "normal").length;
+    const count = pokémon.filter( p => p.types.includes('normal')).length;
     console.log(count);
 
 
